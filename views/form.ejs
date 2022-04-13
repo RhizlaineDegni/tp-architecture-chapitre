@@ -6,15 +6,15 @@
 <body>
 <div class="container-fluid">
   <div class="d-flex flex-column align-items-center justify-content-center w-100" style="height:100vh;">
-    <h1>Chapter form</h1>
+    <h1>Ajouter un livre</h1>
     <form class="d-flex flex-column card w-50" method="post" action="/chapters" >
       <div class="card-body">
         <div class="form-group">
-          <label>Title</label>
+          <label>Titre</label>
           <input name="title" class="form-control" type="text" />
         </div>
         <div class="form-group">
-          <label>nbrOfLesson</label>
+          <label>Nombre de chapitres</label>
           <input name="nbrOfLesson" class="form-control" type="number" />
         </div>
         <div class="form-group">
@@ -29,11 +29,11 @@
           </ul>
         <% } %>
         <div>
-          <input type="submit" value="Submit" class="btn btn-primary" />
+          <input type="submit" value="Valider" class="btn btn-primary" />
         </div>
       </div>
     </form>
-    <a href="/chapters" class="btn btn-primary">Return</a>
+    <a href="/chapters" class="btn btn-primary">Retour</a>
   </div>
 </div>
 </body>

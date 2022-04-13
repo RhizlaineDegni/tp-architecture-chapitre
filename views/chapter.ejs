@@ -1,19 +1,19 @@
 <html>
 <head>
-    <title>Mon title</title>
+    <title>Mes Livres</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
 <div class="container-fluid">
     <div class="d-flex flex-column align-items-center justify-content-center w-100" style="height:100vh;">
-        <h1>Liste des chapitres</h1>
+        <h1>Liste des Livres</h1>
         <div class="d-flex flex-row">
             <% if (chapter) { %>
                 <div class="card mr-4"  style="width: 18rem;">
                     <div class="card-body">
-                        <h4 class="card-title"><%= chapter.title %></h4>
+                        <h4 class="card-title">Titre: <%= chapter.title %></h4>
                         <p class="card-text"><%= chapter %></p>
-                        <a href="/chapters/delete/<%= chapter._id %>" class="btn btn-danger">Delete</a>
+                        <a href="/chapters/delete/<%= chapter._id %>" class="btn btn-danger">Supprimer</a>
                     </div>
                 </div>
             <% } %>
