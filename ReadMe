@@ -13,8 +13,8 @@ control shift p, puis taper set default profil
 ouvrir un terminal
 # Recuperer les sources
 Placez vous dans un repertoire de travail
-git clone https://github.com/fpicot31/tp-architecture-chapitre.git
-
+git clone https://github.com/RhizlaineDegni/tp-architecture-chapitre.git
+ On s'en fout
 # installer nodemon
 npm i -g nodemon
 
