@@ -33,8 +33,7 @@ use demo
 
 db.createUser ( {user: "francois", pwd: "francois", roles: ["readWrite"] } )
 db.createCollection('chapters')
-db.chapters.insertMany([{title: 'mongoose', index : "1", nbrOfLessons: 20}, {title: 'devops', index : 
-"2", nbrOfLessons: 30}]);
+db.chapters.insertMany([{title: 'Seigneur des anneaux', index : "1",isbn : 123456, nbrOfChapter: 20, auteur : "J.R.R. Tolkien", genre : "Fantasie"},{title: "Harry Potter à l'école des sorciers", index : "2", isbn : 789123, nbrOfChapter: 30, auteur : "J. K. Rowling", genre : "Fantasie"}]);
 
 db.chapters.find({})
 db.chapters.findOne({title: 'devops'})

@@ -12,7 +12,10 @@
                 <div class="card mr-4"  style="width: 18rem;">
                     <div class="card-body">
                         <h4 class="card-title">Titre: <%= chapter.title %></h4>
-                        <p class="card-text"><%= chapter %></p>
+                        <p class="card-text">ISBN: <%= chapter.isbn %></p>
+                        <p class="card-text">Auteur: <%= chapter.auteur %></p>
+                        <p class="card-text">Nombre de chapitres: <%= chapter.nbrOfChapter %></p>
+                        <p class="card-text">Genre: <%= chapter.genre %></p>
                         <a href="/chapters/delete/<%= chapter._id %>" class="btn btn-danger">Supprimer</a>
                     </div>
                 </div>

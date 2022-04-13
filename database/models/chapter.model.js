@@ -6,8 +6,10 @@ const chapterSchema = schema({
     type: String,
     required: [true, 'On doit preciser un titre']
   },
-  difficulty: { type: Number },
-  nbrOfLesson: { type: Number, required: [true, 'hello'] },
+  isbn: { type: Number },
+  genre: { type: String },
+  auteur: { type: String },
+  nbrOfChapter: { type: Number, required: [true, 'preciser nb de Chapitres'] },
   index: Number,
   active: Boolean,
 }, {
