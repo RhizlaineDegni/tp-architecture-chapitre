@@ -38,6 +38,9 @@ db.chapters.find({})
 db.chapters.findOne({title: 'devops'})
 
 # Lancer le serveur node applicatif
+npm install morgan
+npm install mongoose
+npm install ejs -g
 npm start
 
 # Ouvrer le navigateur
